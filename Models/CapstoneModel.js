@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const CapstoneSchema = new mongoose.Schema({
   title: {
     type: String,
-    default: "Zen class student dashboard",
+    default: "Zen Class student dashboard",
   },
   submittedOn: {
     type: Date,
