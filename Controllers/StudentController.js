@@ -160,7 +160,7 @@ const forgotPassword = async (req, res) => {
     const randomString =
       Math.random().toString(36).substring(2, 15) +
       Math.random().toString(36).substring(2, 15);
-    const link = `${process.env.FEURL}/reset/${randomString}`;
+    const link = `${process.env.FE_URL}/reset/${randomString}`;
 
     matchedStudent.resetToken = randomString;
 
