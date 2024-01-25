@@ -28,7 +28,7 @@ const signupStudent = async (req, res) => {
     const randomString =
       Math.random().toString(36).substring(2, 15) +
       Math.random().toString(36).substring(2, 15);
-    const link = `${process.env.FE_URL}/confirm/${randomString}`;
+    const link = `https://dashboard-zen-sowbi.netlify.app/confirm/${randomString}`;
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
@@ -160,7 +160,7 @@ const forgotPassword = async (req, res) => {
     const randomString =
       Math.random().toString(36).substring(2, 15) +
       Math.random().toString(36).substring(2, 15);
-    const link = `${process.env.FE_URL}/reset/${randomString}`;
+    const link = `https://dashboard-zen-sowbi.netlify.app/reset/${randomString}`;
 
     matchedStudent.resetToken = randomString;
 
